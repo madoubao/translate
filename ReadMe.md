@@ -41,21 +41,23 @@ System.out.println("翻译结果：" + result);
 
 如果临时需要切换另一个平台，可在参数中选择对应的平台</br>
 ```
-String res = api.getTranslateResult(TranslatePlatformEnum.GOOGLE, query, LanauageTypeEnum.auto,LanauageTypeEnum.zh);
+String result = api.getTranslateResult(TranslatePlatformEnum.GOOGLE, 
+	query, LanauageTypeEnum.auto,LanauageTypeEnum.zh);
 ```
 
 
 <h3>百度</h3></br>
-SDK官网： http://api.fanyi.baidu.com/api/trans/product/desktop?req=developer</br>
-在平台申请APP_ID。每个账号每个月200万字符内免费。</br>
+   SDK官网： http://api.fanyi.baidu.com/api/trans/product/desktop?req=developer</br>
+   在平台申请APP_ID。每个账号每个月200万字符内免费。</br>
 	
 <h3>bing</h3></br>
-SDK官网：http://www.microsoft.com/en-us/translator/translatorapi.aspx</br>
-http://account.azure.com</br>
+   SDK官网：http://www.microsoft.com/en-us/translator/translatorapi.aspx</br>
+   http://account.azure.com</br>
  
 <h3>google</h3>
 SDK官网：https://cloud.google.com/translate</br>
 1.注册</br>
+   
 	* 中国visa卡通过注册。注册时选择“个人”账号。需要上传身份证、卡号、账单等信息。注册时会扣除1美元做测试</br>
 	* 注册账号赠送300美金、期限为一年，超过会扣钱</br>
 	* 如果超出会有账单</br>
