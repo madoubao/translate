@@ -1,4 +1,4 @@
-<h1>实现第三方翻译 SDK 的调用</h1></br>
+<h1>实现第三方翻译 SDK 的调用，多个APP_ID之间随机切换</h1></br>
 翻译平台支持：baidu、google、bing  </br></br>
 1. 只需在配置文件中配置平台和对应的Key，即可直接使用</br>
 2. 根据配置文件，本程序会自动选择相应的翻译平台</br>
@@ -80,18 +80,18 @@ key：	String	一个有效的API密钥来处理这个API的请求。如果您使
 	 
 3.返回结果字段说明</br>
 ```
-		{
-		  "data": {
-		    "translations": [
-		      {
-		        "translatedText": "你好",
-		        "detectedSourceLanguage": "en"
-		      }
-		    ]
-		  }
-		}
+{
+  "data": {
+    "translations": [
+      {
+        "translatedText": "你好",
+        "detectedSourceLanguage": "en"
+      }
+    ]
+  }
+}
 
-		translations[]:   array     包含所提供文本的翻译结果列表
-		translatedText:   string    将文本翻译成目标语言,即翻译结果
-		detectedSourceLanguage:  string  如果在初始请求中没有传递源语言，则自动检测到初始请求的源语言。如果源语言已通过，则不会出现语言的自动检测，并且此字段将被忽略
+translations[]:   array     包含所提供文本的翻译结果列表
+translatedText:   string    将文本翻译成目标语言,即翻译结果
+detectedSourceLanguage:  string  如果在初始请求中没有传递源语言，则自动检测到初始请求的源语言。如果源语言已通过，则不会出现语言的自动检测，并且此字段将被忽略
 ```
