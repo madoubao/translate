@@ -1,0 +1,14 @@
+# 选择翻译平台。三个平台可随意组合，英文逗号隔开。all代表全部平台
+# baidu,bing,google 
+api_platform=google,baidu
+
+#baidu翻译 appId和Key。格式为  appid:key，多个用英文逗号隔开
+baidu_app_id_key=appid1:key1,appid2:key2
+
+#bing翻译 appId和Key。格式为  appid:key，多个用英文逗号隔开
+bing_app_id_key=appid1:key1,appid2:key2
+
+#google翻译 appId和Key。格式为  appid:key，多个用英文逗号隔开
+google_app_id_key=1:AIzaSyDK5jeMlkUlSWTb6JCwO4lJYuOoutkcHuo
+#google 两种翻译模式 base 和 nmt(推荐)
+google_method=nmt
