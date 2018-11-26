@@ -8,7 +8,7 @@
     建议申请多个账号、程序内部逻辑会随机选择不同的APP_ID进行接口请求</br>
 
 
-配置文件
+<h3>配置文件</h3>
 ```
 # 翻译平台。baidu,bing,google 三个平台可随意组合，英文逗号隔开。all代表全部平台
 api_platform=google,baidu
@@ -24,7 +24,7 @@ google_app_id_key=1:key1,2:key2
 # google 翻译模式，两种：base 和 nmt(推荐)
 google_method=nmt
 ```
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</br>
+
 <h3>百度</h3></br>
 SDK官网： http://api.fanyi.baidu.com/api/trans/product/desktop?req=developer</br>
 在平台申请APP_ID。每个账号每个月200万字符内免费。</br>
