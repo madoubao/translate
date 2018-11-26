@@ -36,12 +36,13 @@ http://account.azure.com</br>
  
 <h3>google</h3>
 SDK官网：https://cloud.google.com/translate</br>
-* 注册：</br>
-	1)中国visa卡通过注册。注册时选择“个人”账号。需要上传身份证、卡号、账单等信息。注册时会扣除1美元做测试</br>
-	2)注册账号赠送300美金、期限为一年，超过会扣钱</br>
-	3)如果超出会有账单</br>
+1.注册：</br>
+   
+	* 中国visa卡通过注册。注册时选择“个人”账号。需要上传身份证、卡号、账单等信息。注册时会扣除1美元做测试</br>
+	* 注册账号赠送300美金、期限为一年，超过会扣钱</br>
+	* 如果超出会有账单</br>
 
-* 请求路径及参数</br>
+2.请求路径及参数</br>
 ```
 	url：</br>
 		https://translation.googleapis.com/language/translate/v2</br>
