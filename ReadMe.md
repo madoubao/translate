@@ -45,12 +45,12 @@ SDK官网：https://cloud.google.com/translate</br>
    api地址：https://translation.googleapis.com/language/translate/v2
    入参说明：  </br>
 ```
-q：string必需输入要翻译的文本。重复此参数以在多个文本输入上执行翻译操作。
-target：string必需用于翻译输入文本的语言，设置为语言支持中列出的语言代码之一。
-format：string源文本的格式，采用HTML（默认）或纯文本格式。值html表示HTML，值text表示纯文本。
-source：string源文本的语言，设置为语言支持中列出的语言代码之一。如果未指定源语言，则API将尝试自动检测源语言，并在响应中将其返回。
-model：string翻译模式。两种：base、nmt。base使用基于短语的机器翻译（PBMT）模型，nmt使用神经机器翻译（NMT）模型。默认为nmt。如果模型是nmt，且NMT模型不支持对请求的语言进行翻译，则使用base模型翻译该请求。
-key：string一个有效的API密钥来处理这个API的请求。如果您使用的是OAuth2.0服务帐户凭据（推荐），请不要提供此参数。
+q：		String	必需输入要翻译的文本。重复此参数以在多个文本输入上执行翻译操作。
+target：String	必需用于翻译输入文本的语言，设置为语言支持中列出的语言代码之一。
+format：String	源文本的格式，采用HTML（默认）或纯文本格式。值html表示HTML，值text表示纯文本。
+source：String	源文本的语言，设置为语言支持中列出的语言代码之一。如果未指定源语言，则API将尝试自动检测源语言，并在响应中将其返回。
+model：	String	翻译模式。两种：base、nmt。base使用基于短语的机器翻译（PBMT）模型，nmt使用神经机器翻译（NMT）模型。默认为nmt。如果模型是nmt，且NMT模型不支持对请求的语言进行翻译，则使用base模型翻译该请求。
+key：	String	一个有效的API密钥来处理这个API的请求。如果您使用的是OAuth2.0服务帐户凭据（推荐），请不要提供此参数。
 ```
  提示：
    提供两种翻译模式 nmt模式(推荐)、base模式(不推荐)</br>
