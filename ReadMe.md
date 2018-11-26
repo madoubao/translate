@@ -1,5 +1,5 @@
 <h1>实现第三方翻译 SDK 的调用</h1></br>
-翻译平台支持：百度、google、bing </br>
+翻译平台支持：百度、google。	bing目前还不支持 </br>
 * 只需在配置文件中配置两项，即可直接使用：</br>
 	1. 翻译平台</br>
 	2. APP_ID 和 APP_KEY(一个或多个)</br>
@@ -8,6 +8,22 @@
     建议申请多个账号、程序内部逻辑会随机选择不同的APP_ID进行接口请求</br>
 
 
+配置文件
+```
+# 翻译平台。baidu,bing,google 三个平台可随意组合，英文逗号隔开。all代表全部平台
+api_platform=google,baidu
+
+# baidu翻译 appId和Key。多个用英文逗号隔开
+baidu_app_id_key=appid1:key1,appid2:key2
+
+# bing翻译 appId和Key。多个用英文逗号隔开
+bing_app_id_key=appid1:key1,appid2:key2
+
+# google 翻译没有appId，只有Key。多个用英文逗号隔开
+google_app_id_key=1:key1,2:key2
+# google 翻译模式，两种：base 和 nmt(推荐)
+google_method=nmt
+```
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</br>
 <h3>百度</h3></br>
 SDK官网： http://api.fanyi.baidu.com/api/trans/product/desktop?req=developer</br>
