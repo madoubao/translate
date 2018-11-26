@@ -1,4 +1,4 @@
-#实现第三方翻译 SDK 的调用</h1></br>
+<h1>实现第三方翻译 SDK 的调用</h1></br>
 翻译平台支持：百度、google、bing </br>
 * 只需在配置文件中配置两项，即可直接使用：</br>
 	* 翻译平台</br>
@@ -9,15 +9,15 @@
 
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''</br>
-##百度</br>
+<h3>百度</h3></br>
 SDK官网： http://api.fanyi.baidu.com/api/trans/product/desktop?req=developer</br>
 在平台申请APP_ID。每个账号每个月200万字符内免费。</br>
 	
-##bing</br>
+<h3>bing</h3></br>
 SDK官网：http://www.microsoft.com/en-us/translator/translatorapi.aspx</br>
 http://account.azure.com</br>
  
-##google</br>
+<h3>google</h3>
 SDK官网：https://cloud.google.com/translate</br>
 * 注册：</br>
 	1)中国visa卡通过注册。注册时选择“个人”账号。需要上传身份证、卡号、账单等信息。注册时会扣除1美元做测试</br>
