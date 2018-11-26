@@ -1,10 +1,10 @@
-package casia.translate.api.impl.bing;
+package madou.translate.api.impl.bing;
 
 /**
  * bing翻译语言类型 
  * 
  * 枚举
- * @author myc
+ * @author Yucong.Ma
  */
 public enum BingLanauageTypeEnum{
 	auto/*自动检测*/,

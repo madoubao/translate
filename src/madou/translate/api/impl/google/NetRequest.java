@@ -1,17 +1,17 @@
-package casia.translate.api.impl.google;
+package madou.translate.api.impl.google;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.commons.lang3.StringUtils;
 
-import casia.translate.api.util.Constants;
-import casia.translate.api.util.MD5;
+import madou.translate.api.util.Constants;
+import madou.translate.api.util.MD5;
 
 /**
  * GOOGLE翻译网络请求
  * 
- * @author mayucong
+ * @author Yucong.Ma
  */
 public class NetRequest {
     private static final String TRANS_API_HOST = "https://translation.googleapis.com/language/translate/v2";

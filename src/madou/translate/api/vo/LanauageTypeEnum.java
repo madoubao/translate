@@ -3,7 +3,7 @@ package madou.translate.api.vo;
 /**
  * 翻译语言  枚举类型 
  * 
- * @author madou
+ * @author Yucong.Ma
  */
 public enum LanauageTypeEnum{
 	auto/*自动检测，谷歌官方API无auto语言码*/,

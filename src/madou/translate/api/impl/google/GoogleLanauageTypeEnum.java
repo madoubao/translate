@@ -1,10 +1,10 @@
-package casia.translate.api.impl.google;
+package madou.translate.api.impl.google;
 
 /**
  * 谷歌翻译语言类型 
  * 
  * 枚举
- * @author myc
+ * @author Yucong.Ma
  */
 public enum GoogleLanauageTypeEnum{
 	//基于短语的机器翻译PBMT(base)   神经机器翻译NMT(nmt,默认)

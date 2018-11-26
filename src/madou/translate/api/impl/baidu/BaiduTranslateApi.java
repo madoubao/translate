@@ -1,13 +1,13 @@
-package casia.translate.api.impl.baidu;
+package madou.translate.api.impl.baidu;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
+import org.apache.log4j.LoggerFactory;
 
-import casia.ibasic.fusionsight.common.util.CommonFactory;
-import casia.translate.api.util.ConfigInitHelper;
-import casia.translate.api.util.Constants;
-import casia.translate.api.vo.ApiIdAndKeyVO;
-import casia.translate.api.vo.LanauageTypeEnum;
-import casia.translate.api.vo.TranslatePlatformEnum;
+import madou.translate.api.util.ConfigInitHelper;
+import madou.translate.api.util.Constants;
+import madou.translate.api.vo.ApiIdAndKeyVO;
+import madou.translate.api.vo.LanauageTypeEnum;
+import madou.translate.api.vo.TranslatePlatformEnum;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
@@ -30,11 +30,11 @@ import com.alibaba.fastjson.JSONObject;
 	58000	客户端IP非法		检查个人资料里填写的IP地址 是否正确 ，可前往管理控制平台修改 IP限制，IP可留空
 	58001	译文语言方向不支持	检查译文语言是否在语言列表里
  * 
- * @author mayucong
+ * @author Yucong.Ma
  *
  */
 public class BaiduTranslateApi{
-	static final Logger logger = CommonFactory.createLogger(BaiduTranslateApi.class);
+	static final Logger logger = LoggerFactory.getLogger(BaiduTranslateApi.class);
 
 	/**
 	 * 翻译入口，使用配置文件中的appId和key
@@ -53,7 +53,8 @@ public class BaiduTranslateApi{
     	}
     	
     	ApiIdAndKeyVO idAndKey = ConfigInitHelper.getRandomIdAndKey(TranslatePlatformEnum.BAIDU);
-//    	logger.info("获取随机id和key "+idAndKey.toString());
+    	logger.info("获取随机id和key "+idAndKey.toString());
+		
     	return getTranslateResult(idAndKey.getAppId(),idAndKey.getSecretKey(),queryStr,fromLanguage,toLanguage);
     }
 	
@@ -84,7 +85,7 @@ public class BaiduTranslateApi{
 	        }
 	
 	        Integer errorCode = rjo.getInteger("error_code");
-	        //有错误
+	        // 有错误
 	        if(null != errorCode && errorCode >= 52001){
 	        	logger.error("baidu getTranslateResult error,errorCode="+errorCode+
 	        			" error_msg="+rjo.getString("error_msg"));

@@ -1,4 +1,4 @@
-package casia.translate.api.impl.baidu;
+package madou.translate.api.impl.baidu;
 
 import java.io.BufferedReader;
 import java.io.Closeable;

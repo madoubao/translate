@@ -7,8 +7,8 @@ import java.util.Random;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
+import org.apache.log4j.LoggerFactory;
 
-import madou.ibasic.fusionsight.common.util.CommonFactory;
 import madou.translate.api.vo.ApiIdAndKeyVO;
 import madou.translate.api.vo.TranslatePlatformEnum;
 
@@ -23,11 +23,11 @@ import com.jfinal.kit.PropKit;
  * bing_app_id_key=id1:key1,id2:key2
  * google_app_id_key=id1:key1,id2:key2
  * 
- * @author madou
+ * @author Yucong.Ma
  * @date 2017年11月2日 下午3:52:16
  */
 public class ConfigInitHelper {
-	static Logger logger = CommonFactory.createLogger(ConfigInitHelper.class);
+	static Logger logger = LoggerFactory.getLogger(ConfigInitHelper.class);
 	
 	/**
 	 * 初始化配置项 在配置文件中的名称
@@ -46,7 +46,7 @@ public class ConfigInitHelper {
 	/**
 	 * 初始化所有平台的配置
 	 * 
-	 * @author madou
+	 * @author Yucong.Ma
 	 * @date 2017年11月2日 下午3:52:16
 	 */
 	public static boolean initPlatfomConfig(){
@@ -74,7 +74,7 @@ public class ConfigInitHelper {
 	/**
 	 * 初始化单个平台的配置
 	 * 
-	 * @author madou
+	 * @author Yucong.Ma
 	 * @date 2017年11月2日 下午3:52:16
 	 */
 	public static boolean initSinglePlatformConfig(TranslatePlatformEnum platform){
@@ -133,7 +133,7 @@ public class ConfigInitHelper {
 	 * 
 	 * @param type
 	 * @return
-	 * @author madou
+	 * @author Yucong.Ma
 	 * @date 2017年11月2日 下午6:46:12
 	 */
 	public static ApiIdAndKeyVO getRandomIdAndKey(TranslatePlatformEnum type){

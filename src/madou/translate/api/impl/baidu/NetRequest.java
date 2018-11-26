@@ -1,16 +1,16 @@
-package casia.translate.api.impl.baidu;
+package madou.translate.api.impl.baidu;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.commons.lang3.StringUtils;
 
-import casia.translate.api.util.MD5;
+import madou.translate.api.util.MD5;
 
 /**
  * 百度翻译网络请求
  * 
- * @author mayucong
+ * @author Yucong.Ma
  */
 public class NetRequest {
     private static final String TRANS_API_HOST = "http://api.fanyi.baidu.com/api/trans/vip/translate";

@@ -1,4 +1,4 @@
-package casia.translate.api.impl.google;
+package madou.translate.api.impl.google;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.DataOutputStream;
@@ -33,8 +33,10 @@ import org.bouncycastle.crypto.tls.Certificate;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 /**
- * 20180613翻译报错：Remote host closed connection during handshake
- * 解决方案参照：http://ligaosong.iteye.com/blog/2356346
+ * GOOGLE翻译网络请求
+ *
+ * @author Yucong.Ma
+
  */
 public class TLSSocketConnectionFactory extends SSLSocketFactory {
 

@@ -1,4 +1,4 @@
-package casia.translate.api.impl.google;
+package madou.translate.api.impl.google;
 
 import java.io.BufferedReader;
 import java.io.Closeable;

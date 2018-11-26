@@ -4,8 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
-
-import madou.ibasic.fusionsight.common.util.CommonFactory;
+import org.apache.log4j.LoggerFactory;
 import madou.translate.api.vo.ApiIdAndKeyVO;
 import madou.translate.api.vo.TranslatePlatformEnum;
 
@@ -13,7 +12,7 @@ import madou.translate.api.vo.TranslatePlatformEnum;
  * 常量类
  */
 public class Constants {
-	static final Logger logger = CommonFactory.createLogger(Constants.class);
+	static final Logger logger = LoggerFactory.getLogger(Constants.class);
 	
 	//平台选择：baidu bing google
 	public static TranslatePlatformEnum API_PLATFORM;

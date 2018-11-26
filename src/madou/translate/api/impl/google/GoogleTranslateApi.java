@@ -1,13 +1,13 @@
-package casia.translate.api.impl.google;
+package madou.translate.api.impl.google;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
+import org.apache.log4j.LoggerFactory;
 
-import casia.ibasic.fusionsight.common.util.CommonFactory;
-import casia.translate.api.util.ConfigInitHelper;
-import casia.translate.api.util.Constants;
-import casia.translate.api.vo.ApiIdAndKeyVO;
-import casia.translate.api.vo.LanauageTypeEnum;
-import casia.translate.api.vo.TranslatePlatformEnum;
+import madou.translate.api.util.ConfigInitHelper;
+import madou.translate.api.util.Constants;
+import madou.translate.api.vo.ApiIdAndKeyVO;
+import madou.translate.api.vo.LanauageTypeEnum;
+import madou.translate.api.vo.TranslatePlatformEnum;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
@@ -16,7 +16,7 @@ import com.alibaba.fastjson.JSONObject;
  *谷歌翻译入口
  */
 public class GoogleTranslateApi{
-	static final Logger logger = CommonFactory.createLogger(GoogleTranslateApi.class);
+	static final Logger logger = LoggerFactory.getLogger(GoogleTranslateApi.class);
 
 	/**
 	 * 翻译入口，使用配置文件中的appId和key

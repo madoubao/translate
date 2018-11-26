@@ -1,10 +1,10 @@
-package casia.translate.api.impl.baidu;
+package madou.translate.api.impl.baidu;
 
 /**
  * bing翻译语言类型 
  * 
  * 枚举
- * @author myc
+ * @author Yucong.Ma
  */
 public enum BaiduLanauageTypeEnum{
 	auto/*自动检测*/,
