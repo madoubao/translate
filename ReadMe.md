@@ -1,5 +1,5 @@
 <h1>实现第三方翻译 SDK 的调用</h1></br>
-翻译平台支持：baidu、google、bing </br>
+翻译平台支持：baidu、google、bing </br></br>
 1. 只需在配置文件中配置平台和对应的Key，即可直接使用</br>
 2. 根据配置文件，本程序会自动选择相应的翻译平台</br>
 3. 因为部分第三方翻译平台有限制，如果单个APP_ID调用过于频繁 将会导致没有数据返回。</br>
@@ -42,10 +42,10 @@ SDK官网：https://cloud.google.com/translate</br>
 	* 如果超出会有账单</br>
 
 2.请求路径及参数</br>
-   api地址：https://translation.googleapis.com/language/translate/v2
+   api地址：https://translation.googleapis.com/language/translate/v2</br>
    入参说明：  </br>
 ```
-q：		String	必需输入要翻译的文本。重复此参数以在多个文本输入上执行翻译操作。
+q：	String	必需输入要翻译的文本。重复此参数以在多个文本输入上执行翻译操作。
 target：String	必需用于翻译输入文本的语言，设置为语言支持中列出的语言代码之一。
 format：String	源文本的格式，采用HTML（默认）或纯文本格式。值html表示HTML，值text表示纯文本。
 source：String	源文本的语言，设置为语言支持中列出的语言代码之一。如果未指定源语言，则API将尝试自动检测源语言，并在响应中将其返回。
