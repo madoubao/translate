@@ -8,7 +8,7 @@
     建议申请多个账号、程序内部逻辑会随机选择不同的APP_ID进行接口请求</br>
 
 
-<h3>配置文件</h3>
+<h3>配置文件</h3></br>
 ```
 // 翻译平台。baidu,bing,google 三个平台可随意组合，英文逗号隔开。all代表全部平台
 api_platform=google,baidu
