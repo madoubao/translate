@@ -10,18 +10,18 @@
 
 <h3>配置文件</h3>
 ```
-# 翻译平台。baidu,bing,google 三个平台可随意组合，英文逗号隔开。all代表全部平台
+// 翻译平台。baidu,bing,google 三个平台可随意组合，英文逗号隔开。all代表全部平台
 api_platform=google,baidu
 
-# baidu翻译 appId和Key。多个用英文逗号隔开
+// baidu翻译 appId和Key。多个用英文逗号隔开
 baidu_app_id_key=appid1:key1,appid2:key2
 
-# bing翻译 appId和Key。多个用英文逗号隔开
+// bing翻译 appId和Key。多个用英文逗号隔开
 bing_app_id_key=appid1:key1,appid2:key2
 
-# google 翻译没有appId，只有Key。多个用英文逗号隔开
+// google 翻译没有appId，只有Key。多个用英文逗号隔开
 google_app_id_key=1:key1,2:key2
-# google 翻译模式，两种：base 和 nmt(推荐)
+// google 翻译模式，两种：base 和 nmt(推荐)
 google_method=nmt
 ```
 
