@@ -1,9 +1,11 @@
 <h1>实现第三方翻译 SDK 的调用</h1></br>
-翻译平台支持：baidu、google、bing  可选一种或多种，优先级为：google>bing>baidu</br></br>
+翻译平台支持：baidu、google、bing  </br></br>
 1. 只需在配置文件中配置平台和对应的Key，即可直接使用</br>
 2. 根据配置文件，本程序会自动选择相应的翻译平台</br>
 3. 因为部分第三方翻译平台有限制，如果单个APP_ID调用过于频繁 将会导致没有数据返回。建议申请多个账号、程序内部逻辑会随机选择不同的APP_ID进行接口请求</br>
 
+目前只支持单个平台，后续会支持多个平台。当前一个平台可翻译字符数用完之后，自动切换下一个平台。</br>
+暂定优先级为：google>bing>baidu
 
 <h3>配置文件</h3></br>
    
@@ -24,6 +26,24 @@ google_app_id_key=1:key1,2:key2
 # google 翻译模式，两种：base 和 nmt(推荐)
 google_method=nmt
 ```
+
+<h1>调用示例代码</h1><br>
+这时候请求的是配置文件中对应的翻译平台
+```
+String query = "源字符串";
+
+TranslateApi api = new TranslateApi();
+String result = api.getTranslateResult(query, LanauageTypeEnum.auto,LanauageTypeEnum.zh);
+        
+System.out.println("查询："+query);
+System.out.println("翻译结果：" + result);
+```
+
+如果临时需要切换另一个平台</br>，可加上平台参数
+```
+String res = api.getTranslateResult(TranslatePlatformEnum.GOOGLE, query, LanauageTypeEnum.auto,LanauageTypeEnum.zh);
+```
+
 
 <h3>百度</h3></br>
 SDK官网： http://api.fanyi.baidu.com/api/trans/product/desktop?req=developer</br>
